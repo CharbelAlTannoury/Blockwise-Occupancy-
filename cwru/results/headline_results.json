@@ -1,0 +1,14 @@
+{
+  "normal_macro_direct": 0.0069217410785728005,
+  "normal_macro_record": 0.0017808154114104502,
+  "primary_macro_direct": 0.9585610762176999,
+  "primary_macro_record": 0.9200413703762516,
+  "relative_reduction_normal_macro": 0.7427214639791702,
+  "primary_loss_percentage_points": 3.851970584144837,
+  "all_recordings": 56,
+  "primary_fault_recordings": 36,
+  "additional_fault_recordings": 16,
+  "normal_evaluated_blocks": 29629,
+  "primary_fault_evaluated_blocks": 301367,
+  "additional_fault_evaluated_blocks": 126786
+}

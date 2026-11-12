@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "Record-count distribution agrees with unsigned Stirling numbers for m=1,20,40.",
+    "Scalar score formula checked at 33 micro-windows in every recording; Student and alternate-r scores also checked.",
+    "Interval scan agrees with independent interval enumeration.",
+    "Normal-model mean coefficients agree with the manuscript normal-equation fit.",
+    "All primary per-record summaries agree with saved block-level labels; all changed labels are exactly the record-threshold band.",
+    "Fitting, point calibration, block calibration and normal evaluation use the documented disjoint raw supports.",
+    "Spaced normal evaluation exactly reproduces all four previous normal-only screening counts."
+  ],
+  "maximum_absolute_score_discrepancy": 1.7763568394002505e-14,
+  "maximum_absolute_interval_scan_discrepancy": 3.552713678800501e-15,
+  "maximum_mean_coefficient_discrepancy": 5.995204332975845e-15,
+  "recordings": 56,
+  "primary_evaluated_blocks": 457782
+}

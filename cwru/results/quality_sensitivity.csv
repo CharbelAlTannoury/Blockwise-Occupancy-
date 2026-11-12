@@ -1,0 +1,22 @@
+analysis,method,n_recordings,high_rate,omitted_files
+All primary recordings,Block sum,36,0.36797935949120925,
+All primary recordings,Capped energy,36,0.9703979780521341,
+All primary recordings,Direct count,36,0.9585610762176999,
+All primary recordings,Energy,36,0.9849249286202212,
+All primary recordings,Interval scan,36,0.6875321388535973,
+All primary recordings,Record count,36,0.9200413703762516,
+All primary recordings,Run statistic,36,0.9199921880950751,
+Omit reported noise / clipping,Block sum,30,0.3875864625400426,177 191 214 215 228 229
+Omit reported noise / clipping,Capped energy,30,0.9683262574522364,177 191 214 215 228 229
+Omit reported noise / clipping,Direct count,30,0.9577541684603316,177 191 214 215 228 229
+Omit reported noise / clipping,Energy,30,0.9850276327385955,177 191 214 215 228 229
+Omit reported noise / clipping,Interval scan,30,0.6788395620799501,177 191 214 215 228 229
+Omit reported noise / clipping,Record count,30,0.9206261260516175,177 191 214 215 228 229
+Omit reported noise / clipping,Run statistic,30,0.9198444043883447,177 191 214 215 228 229
+Omit all listed acquisition issues,Block sum,25,0.31376475690493566,177 189 201 213 226 238 191 214 215 228 229
+Omit all listed acquisition issues,Capped energy,25,0.9699489341912912,177 189 201 213 226 238 191 214 215 228 229
+Omit all listed acquisition issues,Direct count,25,0.9576640231015259,177 189 201 213 226 238 191 214 215 228 229
+Omit all listed acquisition issues,Energy,25,0.9859867654478339,177 189 201 213 226 238 191 214 215 228 229
+Omit all listed acquisition issues,Interval scan,25,0.643021275327181,177 189 201 213 226 238 191 214 215 228 229
+Omit all listed acquisition issues,Record count,25,0.9231974534287656,177 189 201 213 226 238 191 214 215 228 229
+Omit all listed acquisition issues,Run statistic,25,0.9148088178283901,177 189 201 213 226 238 191 214 215 228 229

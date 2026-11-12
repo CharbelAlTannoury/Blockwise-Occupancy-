@@ -1,0 +1,73 @@
+{
+  "study": "CWRU application of blockwise occupancy inference",
+  "protocol_status": "Specified before evaluating fault signals; CWRU was selected after normal-reference screening. This is not an externally preregistered study. The evaluation grid was clarified to the manuscript stride before fault signals were evaluated.",
+  "primary_cohort": "48 kHz drive-end acceleration: healthy loads 0,1,2,3 hp and IR, ball, centred OR defects of 0.007,0.014,0.021 inches at each load (36 fault conditions)",
+  "additional_cohort": "All available 48 kHz drive-end outer-race positions 3 and 12 o'clock (16 conditions)",
+  "preprocessing": "No filtering, resampling, per-file normalization, synthetic anomalies or concatenation. Standardize each load using its healthy fitting segment only. Preserve original sample order and the exact named DE array.",
+  "primary_design": {
+    "fit_pairs": 2000,
+    "point_scores": 200,
+    "r": 10,
+    "q": 10,
+    "m": 20,
+    "K": 199,
+    "gap": 50,
+    "monitoring_gap": 100,
+    "evaluation_stride": 50,
+    "point_exceedance_level": 0.05,
+    "warning_level": 0.05,
+    "high_level": 0.01,
+    "record_budget": 0.1,
+    "record_benchmark": "iid continuous",
+    "evaluation_stride_rule": "five micro-scores (5*r), as in the manuscript monitoring grid"
+  },
+  "diagnostic": "Gaussian working CHARN location score with mean basis (1,x,x exp(-x^2/2)) and variance basis (1,x^2), intercept truncated below at 0.1 and nonnegative variance slope, as in the manuscript simulation. Fit and pointwise cutoff remain frozen during count calibration and evaluation.",
+  "comparators": [
+    "direct count",
+    "record count",
+    "absolute block sum",
+    "energy",
+    "capped energy",
+    "interval scan with minimum width 3",
+    "three-score run"
+  ],
+  "additional_comparison": "Randomized-tie rank calibration at a common nominal 0.01 level for the six underlying statistics, using a fixed seed. A direct count and record count cannot differ once the same final count rule is imposed.",
+  "sensitivity_designs": [
+    "r=q=5",
+    "r=q=20",
+    "m=40",
+    "gap=500 and monitoring gap=1000",
+    "K=399",
+    "fit_pairs=20000 and point_scores=2000",
+    "Student-t5 working score with standardized innovations",
+    "spaced evaluation with stride equal to full raw support plus calibration gap; reproduces the earlier normal-only screen"
+  ],
+  "record_sensitivity": "Fixed Yang-Nevzorov growth factors gamma=1,1.02,1.05,1.10,1.25, without selecting a winner on fault results.",
+  "reporting": "Exact per-record block counts and proportions; equal-weight averages over the 36 primary conditions; all 16 additional conditions reported separately. No point adjustment, no binomial standard errors for dependent blocks, and no claim of independent physical replication.",
+  "scope": "No numerical beta-mixing envelope is established by these data. Nominal rank budgets are not asserted as certified field error probabilities. Known bearing state is not a physical short-versus-persistent event annotation; no duration confidence set or onset-delay estimate is claimed.",
+  "seed": 20261110,
+  "subsequent_audit": {
+    "basis": "Smith and Randall (2015), Table 3: literature-motivated acquisition-quality sensitivity added after the primary run, with no model or threshold refitting. All primary recordings retained in headline results.",
+    "exclude_noise_or_clipping": [
+      177,
+      191,
+      214,
+      215,
+      228,
+      229
+    ],
+    "exclude_all_listed_acquisition_issues": [
+      177,
+      189,
+      201,
+      213,
+      226,
+      238,
+      191,
+      214,
+      215,
+      228,
+      229
+    ]
+  }
+}
